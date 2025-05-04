@@ -1,10 +1,6 @@
 'use client'
 
-import CheckBox from "./components/CheckBox/CheckBox";
-import Counter from "./components/Counter/Counter";
-import Test from "./components/Test";
-import TextInput from "./components/TextInput/TextInput";
-import Todo from "./components/Todo/Todo";
+import Button2 from "./components/Button2/Button2";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -14,7 +10,12 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.center}>
           {/* { !!userIsRegistered && <Button title='რეგისტრაცია' />} */}
-          <Todo />
+          <Button2 
+            title='რეგისტრაცია' 
+            onClick={() => {
+              alert('თქვენ წარმატებით გაიარეთ რეგისტრაცია');
+            }}
+            />
         </div>
       </main>
     </div>
